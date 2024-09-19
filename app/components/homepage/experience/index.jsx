@@ -70,8 +70,8 @@ function Experience() {
                         <p className="text-sm sm:text-base">
                           {experience.company}
                         </p>
-                        {experience.datas.map((data) => (
-                          <p className="text-sm">- {data}</p>
+                        {experience.datas.map((data, index) => (
+                          <p key={index} className="text-sm">- {data}</p>
                         ))}
                         <p></p>
                       </div>
